@@ -13,6 +13,11 @@ app.use(expressLayouts);
 
 
 
+
+
+//telling in which folder should the app lookout for static files
+app.use(express.static('./assets'));
+
 app.use('/',require('./routes'));
 
 //setting up view engine
