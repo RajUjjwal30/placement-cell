@@ -1,9 +1,17 @@
 const express = require('express');
+//placing mongoose setup
+const db = require('./config/mongoose');
 const app = express();
+
+
 
 const port = 3000;
 
 app.use('/',require('./routes'));
+
+//setting up view engine
+app.set('view engine','ejs');
+app.set('views','./views');
 
 
 
