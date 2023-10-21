@@ -1,11 +1,20 @@
 const express = require('express');
-//placing mongoose setup
-const db = require('./config/mongoose');
+//requirinig cookie-parser
+const cookieParser = require('cookie-parser');
+
 const app = express();
 
 
 
 const port = 3000;
+
+//placing mongoose setup
+const db = require('./config/mongoose');
+
+//reading through the posts request
+app.use(express.urlencoded());
+//we need to tell the app to use in the middleware(cookie)
+app.use(cookieParser());
 
 //requiring ejs-layouts
 const expressLayouts = require('express-ejs-layouts');

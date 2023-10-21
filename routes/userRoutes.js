@@ -13,4 +13,11 @@ router.get('/signIn',userController.signIn);
 
 
 
+
+router.post('/create',userController.createUser);
+
+
+
+
+
 module.exports = router; 
