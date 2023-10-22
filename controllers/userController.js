@@ -50,6 +50,19 @@ module.exports.createUser = async function(req,res){
     }
 };
 
+//create session(sign-In)
+module.exports.createSession = function(req,res){
+    return res.redirect('/');
+}
+
+// //sign-Out
+// module.exports.signout = function(req,res){
+    
+//     // req.logout(function(err){
+//     //     if(err){return next(err);}
+//     //     return res.redirect('/signIn');
+//     // });
+// };
 
 
 

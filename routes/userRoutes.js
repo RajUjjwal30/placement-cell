@@ -16,6 +16,10 @@ router.get('/signIn',userController.signIn);
 
 router.post('/create',userController.createUser);
 
+router.post('/create-session', userController.createSession);
+
+//router.get('/signout', userController.signout);
+
 
 
 
